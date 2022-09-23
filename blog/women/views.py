@@ -6,3 +6,7 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse('Page aplication WOMAN ')
+
+
+def categories(request, catid):
+    return HttpResponse(f'<h1> Articles by categories </h1><p>{catid}</p>')
